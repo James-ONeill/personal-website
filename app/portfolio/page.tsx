@@ -5,6 +5,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Portfolio | James O'Neill",
+  description: "Check out a selection of the projects I've worked on."
 };
 
 const projects: ProjectProps[] = [
