@@ -10,10 +10,10 @@ const links: NavLink[] = [
     href: "/portfolio",
     text: "Portfolio",
   }, 
-  {
-    href: "/contact",
-    text: "Contact Me",
-  },  
+  // {
+  //   href: "/contact",
+  //   text: "Contact Me",
+  // },  
 ];
 
 export default function Header() {

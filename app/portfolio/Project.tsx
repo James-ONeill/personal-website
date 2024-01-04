@@ -13,22 +13,17 @@ export interface Props {
   title: string;
 }
 
-export default function Project({
-  description,
-  href,
-  image,
-  title,
-}: Props) {
+export default function Project({ description, href, image, title }: Props) {
   return (
     <article className="flex flex-col gap-10 lg:flex-row">
-      <div className="lg:w-1/3">
+      <div className="no-shrink lg:w-1/3">
         {image && (
           <Image
             src={image.src}
             alt={image.alt}
             width={1280}
             height={800}
-            className={`rounded-2xl bg-white shadow-2xl ${image.backgroundClassName}`}
+            className={`rounded-2xl bg-white shadow-2xl shadow-neutral-700 ${image.backgroundClassName}`}
           />
         )}
       </div>
