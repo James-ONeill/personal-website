@@ -18,7 +18,7 @@ const links: NavLink[] = [
 
 export default function Header() {
   return (
-    <header className="px-8 py-10">
+    <header className="px-8 py-10 border-t-4 border-blue-950">
       <div className="mx-auto flex max-w-[80rem] items-center justify-between">
         <Link
           href="/"
