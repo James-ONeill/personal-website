@@ -1,5 +1,9 @@
-import Container from "@/components/Container";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "James O'Neill - Full Stack Web Developer"
+}
 
 export default function Home() {
   return (
