@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-gradient-to-b to-indigo-100 from-indigo-50">
+    <html lang="en" className="bg-gradient-to-b to-indigo-100 from-indigo-50 bg-indigo-50">
       <body className={pt_sans.className}>
         <div className="flex min-h-screen flex-col">
           <Header />
