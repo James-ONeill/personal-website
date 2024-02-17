@@ -1,12 +1,19 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import type { Metadata } from "next";
-import { PT_Sans } from "next/font/google";
+import { Fira_Mono, Fira_Sans } from "next/font/google";
 import "./globals.css";
+import { ReactNode } from "react";
 
-const pt_sans = PT_Sans({
+const fira_sans = Fira_Sans({
   weight: ["400", "700"],
-  variable: "--font-pt-sans",
+  variable: "--font-fira-sans",
+  subsets: ["latin"],
+});
+
+const fira_mono = Fira_Mono({
+  weight: ["400"],
+  variable: "--font-fira-mono",
   subsets: ["latin"],
 });
 
@@ -18,17 +25,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+interface Props {
+  children: ReactNode;
+}
+
+export default function RootLayout({ children }: Props) {
   return (
     <html
       lang="en"
-      className="bg-indigo-50 bg-gradient-to-b from-indigo-50 to-indigo-100"
+      className={`bg-indigo-50 bg-gradient-to-b from-indigo-50 to-indigo-100 ${fira_mono.variable}`}
     >
-      <body className={pt_sans.className}>
+      <body className={fira_sans.className}>
         <div className="flex min-h-screen flex-col">
           <Header />
 

@@ -16,6 +16,9 @@ const config: Config = {
       colors: {
         brand: "var(--brand-color)",
       },
+      fontFamily: {
+        mono: ["var(--font-fira-mono)"],
+      },
       listStyleType: {
         square: "square",
       },

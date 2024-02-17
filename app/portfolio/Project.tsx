@@ -29,8 +29,8 @@ export default function Project({ description, href, image, title }: Props) {
       </div>
 
       <div className="space-y-4">
-        <h2 className="text-xl font-bold">{title}</h2>
-        
+        <h2 className="text-xl font-bold font-mono">{title}</h2>
+
         {description && (
           <div className="space-y-2 text-gray-500 lg:max-w-[50rem]">
             {description}
@@ -40,7 +40,7 @@ export default function Project({ description, href, image, title }: Props) {
         {href && (
           <Link
             href={href}
-            className="text-md inline-block rounded-md bg-blue-950 px-4 py-2 text-sm font-semibold uppercase tracking-wide text-white transition-colors duration-300 hover:bg-gray-200 hover:text-blue-950"
+            className="text-md inline-block rounded-md bg-blue-950 px-4 py-2 text-sm font-semibold tracking-wide text-white transition-colors duration-300 hover:bg-gray-200 hover:text-blue-950"
           >
             View Project
           </Link>
