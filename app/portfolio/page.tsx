@@ -150,7 +150,7 @@ export default function Portfolio() {
   return (
     <main>
       <Container>
-        <h1 className="text-6xl my-20 uppercase font-mono">Portfolio</h1>
+        <h1 className="text-6xl my-20 font-mono">Portfolio</h1>
 
         <div className="space-y-20">
           {projects.map((project, key) => (
