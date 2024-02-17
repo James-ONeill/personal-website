@@ -6,7 +6,7 @@ import {
   SiLinkedinHex,
 } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
-import { createElement } from "react";
+import { CSSProperties, createElement } from "react";
 
 interface NavLink {
   href: string;
@@ -18,10 +18,10 @@ const links: NavLink[] = [
     href: "/portfolio",
     text: "Portfolio",
   },
-  // {
-  //   href: "/contact",
-  //   text: "Contact Me",
-  // },
+  {
+    href: "/uses",
+    text: "Uses",
+  },
 ];
 
 interface IconLink {
@@ -46,10 +46,7 @@ const iconLinks: IconLink[] = [
   },
 ];
 
-const brandColor = (hex: string) =>
-  ({
-    "--brand-color": hex,
-  }) as React.CSSProperties;
+const brandColor = (hex: string) => ({ "--brand-color": hex }) as CSSProperties;
 
 export default function Header() {
   return (
@@ -81,10 +78,11 @@ export default function Header() {
               <li key={key}>
                 <Link
                   href={link.href}
-                  className="hover:text-brand block transition-colors duration-150"
+                  className="block transition-colors duration-150 hover:text-brand"
                   style={link.hoverColor ? brandColor(link.hoverColor) : {}}
                 >
                   <span className="sr-only">{link.altText}</span>
+                  
                   {createElement(link.icon, {
                     className: "h-6 w-6",
                   })}

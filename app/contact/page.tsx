@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Container from "@/components/Container";
 
 export const metadata: Metadata = {
-  title: "Contact | James O'Neill",
+  title: "Contact",
 };
 
 export default function Contact() {

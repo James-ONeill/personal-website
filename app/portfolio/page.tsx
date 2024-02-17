@@ -4,7 +4,7 @@ import Project, { Props as ProjectProps } from "./Project";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Portfolio | James O'Neill",
+  title: "Portfolio",
   description: "Check out a selection of the projects I've worked on."
 };
 
