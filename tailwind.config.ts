@@ -16,6 +16,9 @@ const config: Config = {
       colors: {
         brand: "var(--brand-color)",
       },
+      listStyleType: {
+        square: "square",
+      },
     },
   },
   plugins: [],

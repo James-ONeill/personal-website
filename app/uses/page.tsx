@@ -15,7 +15,7 @@ export default function Uses() {
         <section className="space-y-4">
           <h2 className="text-xl font-bold">Hardware</h2>
 
-          <ul className="space-y-4 list-disc">
+          <ul className="list-square space-y-4 text-gray-500">
             <li>MacBook Pro, 16-inch, 2019. (2.3 GHz 8-Core Intel Core i9)</li>
             <li>Apple Magic Keyboard 2</li>
             <li>Apple Magic Mouse 2</li>
@@ -28,7 +28,7 @@ export default function Uses() {
         <section className="space-y-4">
           <h2 className="text-xl font-bold">Languages</h2>
 
-          <ul className="space-y-4 list-disc">
+          <ul className="list-square space-y-4 text-gray-500">
             <li>
               In the last few years I&apos;ve primarily worked with React and
               NextJS using Typescript.
@@ -53,7 +53,7 @@ export default function Uses() {
         <section className="space-y-4">
           <h2 className="text-xl font-bold">Other</h2>
 
-          <ul className="space-y-4 list-disc">
+          <ul className="list-square space-y-4 text-gray-500">
             <li>
               Visual Studio Code has been my code editor of choice for many
               years. Right now I use the Night Owl theme.
