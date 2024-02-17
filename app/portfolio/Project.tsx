@@ -30,6 +30,7 @@ export default function Project({ description, href, image, title }: Props) {
 
       <div className="space-y-4">
         <h2 className="text-xl font-bold">{title}</h2>
+        
         {description && (
           <div className="space-y-2 text-gray-500 lg:max-w-[50rem]">
             {description}

@@ -11,8 +11,11 @@ const pt_sans = PT_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "James O'Neill",
   authors: { name: "James O'Neill" },
+  title: {
+    absolute: "James O'Neill",
+    template: "%s | James O'Neill",
+  },
 };
 
 export default function RootLayout({
@@ -21,7 +24,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-gradient-to-b to-indigo-100 from-indigo-50 bg-indigo-50">
+    <html
+      lang="en"
+      className="bg-indigo-50 bg-gradient-to-b from-indigo-50 to-indigo-100"
+    >
       <body className={pt_sans.className}>
         <div className="flex min-h-screen flex-col">
           <Header />
