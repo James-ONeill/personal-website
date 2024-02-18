@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
 import Container from "@/components/Container";
-import Project, { Props as ProjectProps } from "./Project";
+import MainHeading from "@/components/typography/MainHeading";
+import type { Metadata } from "next";
 import Link from "next/link";
+import Project, { Props as ProjectProps } from "./Project";
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "Check out a selection of the projects I've worked on."
+  description: "Check out a selection of the projects I've worked on.",
 };
 
 const projects: ProjectProps[] = [
@@ -150,7 +151,7 @@ export default function Portfolio() {
   return (
     <main>
       <Container>
-        <h1 className="text-6xl my-20 font-mono">Portfolio</h1>
+        <MainHeading>Portfolio</MainHeading>
 
         <div className="space-y-20">
           {projects.map((project, key) => (

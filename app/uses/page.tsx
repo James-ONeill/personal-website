@@ -1,5 +1,6 @@
-import type { Metadata } from "next";
 import Container from "@/components/Container";
+import MainHeading from "@/components/typography/MainHeading";
+import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -10,7 +11,7 @@ export default function Uses() {
   return (
     <Container>
       <div className="space-y-20">
-        <h1 className="my-20 font-mono text-6xl">What I Use</h1>
+        <MainHeading>What I Use</MainHeading>
 
         <section className="space-y-4">
           <h2 className="text-xl font-bold font-mono">Hardware</h2>
