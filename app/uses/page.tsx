@@ -14,9 +14,9 @@ export default function Uses() {
         <MainHeading>What I Use</MainHeading>
 
         <section className="space-y-4">
-          <h2 className="text-xl font-bold font-mono">Hardware</h2>
+          <h2 className="font-mono text-xl font-bold">Hardware</h2>
 
-          <ul className="list-square space-y-4 text-gray-500 marker:text-pink-600">
+          <ul className="list-square space-y-4 pl-5 text-gray-500 marker:text-pink-600">
             <li>MacBook Pro, 16-inch, 2019. (2.3 GHz 8-Core Intel Core i9)</li>
             <li>Apple Magic Keyboard 2</li>
             <li>Apple Magic Mouse 2</li>
@@ -27,9 +27,9 @@ export default function Uses() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-xl font-bold font-mono">Languages</h2>
+          <h2 className="font-mono text-xl font-bold">Languages</h2>
 
-          <ul className="list-square space-y-4 text-gray-500 marker:text-pink-600">
+          <ul className="list-square space-y-4 pl-5 text-gray-500 marker:text-pink-600">
             <li>
               In the last few years I&apos;ve primarily worked with React and
               NextJS using Typescript.
@@ -52,9 +52,9 @@ export default function Uses() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-xl font-bold font-mono">Other</h2>
+          <h2 className="font-mono text-xl font-bold">Other</h2>
 
-          <ul className="list-square space-y-4 text-gray-500 marker:text-pink-600">
+          <ul className="list-square space-y-4 pl-5 text-gray-500 marker:text-pink-600">
             <li>
               Visual Studio Code has been my code editor of choice for many
               years. Right now I use the Night Owl theme.
