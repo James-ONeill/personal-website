@@ -2,21 +2,9 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import clsx from "clsx";
 import type { Metadata } from "next";
-import { Fira_Mono, Fira_Sans } from "next/font/google";
 import { ReactNode } from "react";
 import "./globals.css";
-
-const fira_sans = Fira_Sans({
-  weight: ["400", "700"],
-  variable: "--font-fira-sans",
-  subsets: ["latin"],
-});
-
-const fira_mono = Fira_Mono({
-  weight: ["400"],
-  variable: "--font-fira-mono",
-  subsets: ["latin"],
-});
+import { fira_mono, fira_sans } from "./webfonts";
 
 export const metadata: Metadata = {
   authors: { name: "James O'Neill" },
