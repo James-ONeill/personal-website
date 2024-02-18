@@ -37,10 +37,10 @@ export default function Home() {
               height={150}
             />
             <div className="space-y-2">
-              <h1 className="text-4xl font-bold lg:text-6xl">
+              <h1 className="text-3xl font-bold lg:text-6xl">
                 Hey, I&apos;m James
               </h1>
-              <p className="font-mono text-xl">I&apos;m a web developer</p>
+              <p className="font-mono text-lg lg:text-xl">I&apos;m a web developer</p>
             </div>
           </div>
 

@@ -51,7 +51,7 @@ const brandColor = (hex: string) => ({ "--brand-color": hex }) as CSSProperties;
 export default function Header() {
   return (
     <header className="border-t-4 border-blue-950 px-8 py-10">
-      <div className="mx-auto flex max-w-[80rem] items-center justify-between">
+      <div className="mx-auto flex max-w-[80rem] flex-col gap-4 lg:flex-row items-center lg:justify-between">
         <Link
           href="/"
           className="text-2xl font-extrabold uppercase tracking-wide"
@@ -73,7 +73,7 @@ export default function Header() {
             ))}
           </ul>
 
-          <ul className="flex gap-4">
+          <ul className="hidden lg:flex gap-4">
             {iconLinks.map((link, key) => (
               <li key={key}>
                 <Link
@@ -82,7 +82,7 @@ export default function Header() {
                   style={link.hoverColor ? brandColor(link.hoverColor) : {}}
                 >
                   <span className="sr-only">{link.altText}</span>
-                  
+
                   {createElement(link.icon, {
                     className: "h-6 w-6",
                   })}
