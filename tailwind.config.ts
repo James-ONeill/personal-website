@@ -17,6 +17,7 @@ const config: Config = {
         brand: "var(--brand-color)",
       },
       fontFamily: {
+        sans: ["var(--font-fira-sans)"],
         mono: ["var(--font-fira-mono)"],
       },
       listStyleType: {

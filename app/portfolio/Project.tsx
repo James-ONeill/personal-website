@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
@@ -23,13 +24,16 @@ export default function Project({ description, href, image, title }: Props) {
             alt={image.alt}
             width={1280}
             height={800}
-            className={`rounded-2xl bg-white shadow-2xl shadow-neutral-700 ${image.backgroundClassName}`}
+            className={clsx(
+              "rounded-2xl bg-white shadow-2xl shadow-neutral-700",
+              image.backgroundClassName,
+            )}
           />
         )}
       </div>
 
       <div className="space-y-4">
-        <h2 className="text-xl font-bold font-mono">{title}</h2>
+        <h2 className="font-mono text-xl font-bold">{title}</h2>
 
         {description && (
           <div className="space-y-2 text-gray-500 lg:max-w-[50rem]">
