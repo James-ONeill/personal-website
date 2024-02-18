@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Uses() {
   return (
     <Container>
-      <div className="space-y-20">
+      <div className="space-y-20 [&_a]:text-blue-600 [&_a]:font-bold">
         <MainHeading>What I Use</MainHeading>
 
         <section className="space-y-4">
@@ -41,10 +41,11 @@ export default function Uses() {
             </li>
             <li>
               My go-to for styling is Tailwind CSS. While I can work with any
-              approach I find best for my own productivity.
+              approach I find it best for my own productivity.
             </li>
             <li>
-              Lately I&apos;ve been dabbling with trying to learn webGL.{" "}
+              Lately I&apos;ve been dabbling with trying to learn webGL. Bruno
+              Simon&apos;s course,{" "}
               <Link href="https://threejs-journey.com/">THREE JS Journey</Link>{" "}
               has been a fantastic resource for that.
             </li>
