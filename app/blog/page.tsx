@@ -1,8 +1,8 @@
 import Container from "@/components/Container";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getSortedPostsData } from "./posts";
 import { notFound } from "next/navigation";
+import { getSortedPostsData } from "./posts";
 
 export const metadata: Metadata = {
   title: "Blog | James O'Neill",
