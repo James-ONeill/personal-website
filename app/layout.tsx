@@ -1,28 +1,34 @@
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import clsx from "clsx";
 import type { Metadata } from "next";
-import { PT_Sans } from "next/font/google";
+import { ReactNode } from "react";
 import "./globals.css";
-
-const pt_sans = PT_Sans({
-  weight: ["400", "700"],
-  variable: "--font-pt-sans",
-  subsets: ["latin"],
-});
+import { fira_mono, fira_sans } from "./webfonts";
 
 export const metadata: Metadata = {
-  title: "James O'Neill",
   authors: { name: "James O'Neill" },
+  title: {
+    absolute: "James O'Neill",
+    template: "%s | James O'Neill",
+  },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+interface Props {
+  children: ReactNode;
+}
+
+export default function RootLayout({ children }: Props) {
   return (
-    <html lang="en" className="bg-gradient-to-b to-indigo-100 from-indigo-50 bg-indigo-50">
-      <body className={pt_sans.className}>
+    <html
+      lang="en"
+      className={clsx(
+        "bg-indigo-50 bg-gradient-to-b from-indigo-50 to-indigo-100",
+        fira_mono.variable,
+        fira_sans.variable,
+      )}
+    >
+      <body className="bg-[radial-gradient(rgba(204,_204,_204,_0.7)_1px,_rgba(255,_255,_255,_0)_1px)] bg-[length:1.7rem_1.7rem]">
         <div className="flex min-h-screen flex-col">
           <Header />
 

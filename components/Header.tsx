@@ -6,7 +6,7 @@ import {
   SiLinkedinHex,
 } from "@icons-pack/react-simple-icons";
 import Link from "next/link";
-import { createElement } from "react";
+import { CSSProperties, createElement } from "react";
 
 interface NavLink {
   href: string;
@@ -18,10 +18,10 @@ const links: NavLink[] = [
     href: "/portfolio",
     text: "Portfolio",
   },
-  // {
-  //   href: "/contact",
-  //   text: "Contact Me",
-  // },
+  {
+    href: "/uses",
+    text: "Uses",
+  },
 ];
 
 interface IconLink {
@@ -46,18 +46,15 @@ const iconLinks: IconLink[] = [
   },
 ];
 
-const brandColor = (hex: string) =>
-  ({
-    "--brand-color": hex,
-  }) as React.CSSProperties;
+const brandColor = (hex: string) => ({ "--brand-color": hex }) as CSSProperties;
 
 export default function Header() {
   return (
-    <header className="border-t-4 border-blue-950 px-8 py-10">
-      <div className="mx-auto flex max-w-[80rem] items-center justify-between">
+    <header className="border-t-8 border-blue-950 px-8 py-10">
+      <div className="mx-auto flex flex-col items-center gap-4 lg:flex-row lg:justify-between">
         <Link
           href="/"
-          className="text-2xl font-extrabold uppercase tracking-wide"
+          className="text-xl font-semibold uppercase tracking-wide"
         >
           James O&apos;Neill
         </Link>
@@ -76,15 +73,16 @@ export default function Header() {
             ))}
           </ul>
 
-          <ul className="flex gap-4">
+          <ul className="hidden gap-4 lg:flex">
             {iconLinks.map((link, key) => (
               <li key={key}>
                 <Link
                   href={link.href}
-                  className="hover:text-brand block transition-colors duration-150"
+                  className="block text-gray-400 transition duration-300 ease-in-out hover:scale-110 hover:text-brand"
                   style={link.hoverColor ? brandColor(link.hoverColor) : {}}
                 >
                   <span className="sr-only">{link.altText}</span>
+
                   {createElement(link.icon, {
                     className: "h-6 w-6",
                   })}
