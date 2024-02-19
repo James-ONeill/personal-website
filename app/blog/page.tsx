@@ -2,8 +2,8 @@ import Container from "@/components/Container";
 import fs from "fs";
 import matter from "gray-matter";
 import type { Metadata } from "next";
-import path from "path";
 import Link from "next/link";
+import path from "path";
 
 interface PostMetadata {
   id: string;
@@ -13,7 +13,7 @@ interface PostMetadata {
 
 const postsDirectory = path.join(process.cwd(), "app/blog/(posts)");
 
-export function getSortedPostsData() {
+function getSortedPostsData() {
   return fs
     .readdirSync(postsDirectory)
     .filter(
