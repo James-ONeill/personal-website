@@ -7,7 +7,7 @@ export const fira_sans = Fira_Sans({
 });
 
 export const fira_mono = Fira_Mono({
-  weight: ["400"],
+  weight: ["400", "700"],
   variable: "--font-fira-mono",
   subsets: ["latin"],
 });
