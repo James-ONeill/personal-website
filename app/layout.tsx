@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { ReactNode } from "react";
 import "./globals.css";
 import { fira_mono, fira_sans } from "./webfonts";
+import GridAnimation from "@/components/GridAnimation";
 
 export const metadata: Metadata = {
   authors: { name: "James O'Neill" },
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: Props) {
           {children}
 
           <Footer />
+          <GridAnimation />
         </div>
       </body>
     </html>
