@@ -150,6 +150,26 @@ const projects: ProjectProps[] = [
     ),
   },
   {
+    title: "Weight Watchers Coach Academy",
+    image: {
+      src: "/img/portfolio/ww-coach-academy.png",
+      alt: "Screenshot of the Vivo Life homepage",
+    },
+    technologies: ["laravel", "vue", "tailwind"],
+    description: (
+      <>
+        <p>
+          From 2014 to 2020, new employees at Weight Watchers UK used the coach
+          academy site as part of their onboarding. It started out as a booking
+          system for in-person training courses, allowing them to select
+          sessions based on their location and sending them email reminders
+          before each course. The site evolved over that time, based on changes
+          to Weight Watchers&apos; training needs and their corporate branding.
+        </p>
+      </>
+    ),
+  },
+  {
     title: "Notaro Homes",
     href: "https://www.notarohomes.co.uk/",
     image: {

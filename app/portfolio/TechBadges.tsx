@@ -49,7 +49,7 @@ export default function TechBadges({ technologies }: Props) {
       tailwind: {
         icon: SiTailwindcss,
         color: SiTailwindcssHex,
-        alt: "TailwindCSS",
+        alt: "Tailwind CSS",
       },
     };
 
@@ -57,7 +57,7 @@ export default function TechBadges({ technologies }: Props) {
   }, [technologies]);
 
   return (
-    <ul className="flex w-max gap-4 rounded-full bg-white/[.85] px-4 py-2 shadow-lg shadow-neutral-700/[.2] backdrop-blur-sm">
+    <ul className="flex w-max gap-4 rounded-full bg-white px-4 py-2 shadow-lg shadow-neutral-700/[.2]">
       {badges.map(({ icon, color, alt }, key) => (
         <li key={key}>
           <span className="sr-only">Built using {alt}</span>

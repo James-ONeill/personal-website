@@ -28,7 +28,7 @@ export default function RootLayout({ children }: Props) {
         fira_sans.variable,
       )}
     >
-      <body className="bg-[radial-gradient(rgba(204,_204,_204,_.7)_1px,_rgba(255,_255,_255,_0)_1px)] bg-[length:1.7rem_1.7rem]">
+      <body className="bg-[radial-gradient(rgba(204,_204,_204,_.7)_1px,_rgba(255,_255,_255,_0)_1px)] bg-[length:1.7rem_1.7rem] antialiased">
         <div className="flex min-h-screen flex-col">
           <Header />
 
