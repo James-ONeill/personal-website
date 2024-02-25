@@ -50,7 +50,7 @@ const projects: ProjectProps[] = [
     description: (
       <>
         <p>
-          Launched in 2021, Sneaks of Nature is an NFT project that marketed
+          Launched in 2022, Sneaks of Nature is an NFT project that marketed
           itself with an immersive storytelling experience. I was one of two
           developers involved in building the project website. Most of my work
           was focused on the purchase flow which simulated the look and feel of
@@ -97,6 +97,29 @@ const projects: ProjectProps[] = [
     ),
   },
   {
+    title: "Smile Windows",
+    image: {
+      src: "/img/portfolio/smile-windows.png",
+      alt: "Screenshot of the Smile Windows builder page",
+    },
+    description: (
+      <>
+        <p>
+          Smile Windows was an online tool for building and visualising a
+          variety of windows and doors. The end user could select from a variety
+          of options including frame styles, glass styles and colours and see a
+          running quote as well as a visualisation of their chosen product. They
+          could then save their design for future reference or request a call
+          from the sales team.
+        </p>
+        <p>
+          Ultimately the project didn&apos;t end up launching for business
+          reasons but the builder itself was feature complete.
+        </p>
+      </>
+    ),
+  },
+  {
     title: "Vivo Life",
     href: "https://www.vivolife.com/",
     image: {
@@ -121,9 +144,6 @@ const projects: ProjectProps[] = [
       </>
     ),
   },
-  // {
-  //   title: "Smile Windows",
-  // },
   {
     title: "Notaro Homes",
     href: "https://www.notarohomes.co.uk/",
