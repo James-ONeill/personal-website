@@ -2,6 +2,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
+import TechBadges, { Technology } from "./TechBadges";
 
 export interface Props {
   description?: ReactNode | ReactNode[];
@@ -12,9 +13,16 @@ export interface Props {
     alt: string;
   };
   title: string;
+  technologies?: Technology[];
 }
 
-export default function Project({ description, href, image, title }: Props) {
+export default function Project({
+  description,
+  href,
+  image,
+  title,
+  technologies = [],
+}: Props) {
   return (
     <article className="flex flex-col gap-10 lg:flex-row">
       <div className="no-shrink lg:w-1/3">
@@ -33,7 +41,9 @@ export default function Project({ description, href, image, title }: Props) {
       </div>
 
       <div className="space-y-4">
-        <h2 className="font-bold tracking-wider text-xl">{title}</h2>
+        <h2 className="text-xl font-bold tracking-wider">{title}</h2>
+
+        {technologies.length > 0 && <TechBadges technologies={technologies} />}
 
         {description && (
           <div className="space-y-2 text-gray-500 lg:max-w-[50rem]">

@@ -40,7 +40,9 @@ export default function Home() {
               <h1 className="text-3xl font-bold lg:text-6xl">
                 Hey, I&apos;m James
               </h1>
-              <p className="font-mono text-lg lg:text-xl">I&apos;m a web developer</p>
+              <p className="font-mono text-lg lg:text-xl">
+                I&apos;m a web developer
+              </p>
             </div>
           </div>
 
