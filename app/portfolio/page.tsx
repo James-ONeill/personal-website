@@ -13,6 +13,7 @@ const projects: ProjectProps[] = [
   {
     title: "B/R Marketplace",
     href: "https://bleacherreportmarketplace.com/",
+    technologies: ["react", "next", "tailwind"],
     image: {
       src: "/img/portfolio/br-marketplace.png",
       alt: "Screenshot of the B/R Marketplace homepage",
@@ -47,6 +48,7 @@ const projects: ProjectProps[] = [
       alt: "Screenshot of the Sneaks of Nature homepage",
     },
     href: "https://sneaksofnature.xyz",
+    technologies: ["react", "next", "tailwind"],
     description: (
       <>
         <p>
@@ -70,6 +72,7 @@ const projects: ProjectProps[] = [
   {
     title: "Nescafé Azera - Path to Purchase",
     href: "https://maze-lime.vercel.app/",
+    technologies: ["react", "laravel", "tailwind"],
     image: {
       src: "/img/portfolio/path-to-purchase.png",
       alt: "Screenshot of the Path to Purchase game screen",
@@ -102,6 +105,7 @@ const projects: ProjectProps[] = [
       src: "/img/portfolio/smile-windows.png",
       alt: "Screenshot of the Smile Windows builder page",
     },
+    technologies: ["laravel", "vue", "tailwind"],
     description: (
       <>
         <p>
@@ -126,6 +130,7 @@ const projects: ProjectProps[] = [
       src: "/img/portfolio/vivo-life.png",
       alt: "Screenshot of the Vivo Life homepage",
     },
+    technologies: ["shopify", "vue", "tailwind"],
     description: (
       <>
         <p>
@@ -151,6 +156,7 @@ const projects: ProjectProps[] = [
       src: "/img/portfolio/notaro-homes.png",
       alt: "Screenshot of the Notaro Homes homepage",
     },
+    technologies: ["wordpress"],
     description: (
       <p>
         I was one of two developers who worked on the Notaro Homes website. In
