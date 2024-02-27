@@ -12,11 +12,11 @@ export default function Uses() {
     <main>
       <MainHeading>What I Use</MainHeading>
       <Container>
-        <div className="space-y-20 [&_a]:font-bold [&_a]:text-blue-600">
+        <div className="space-y-20 [&_a:focus]:[text-shadow:_2px_2px_2px_rgb(219_39_119_/_100%)] [&_a:hover]:[text-shadow:_2px_2px_0_rgb(219_39_119_/_40%)] [&_a]:font-bold [&_a]:text-blue-950 [&_a]:transition-[text-shadow] [&_a]:duration-300 [&_a]:[text-shadow:_0_0_0_rgb(219_39_119_/_40%)]">
           <section className="space-y-4">
             <h2 className="font-mono text-xl font-bold">Hardware</h2>
 
-            <ul className="list-square space-y-4 pl-5 text-gray-500 marker:text-pink-600">
+            <ul className="list-square space-y-4 pl-8 text-gray-500 marker:text-pink-600">
               <li>
                 MacBook Pro, 16-inch, 2019. (2.3 GHz 8-Core Intel Core i9)
               </li>
@@ -31,7 +31,7 @@ export default function Uses() {
           <section className="space-y-4">
             <h2 className="font-mono text-xl font-bold">Languages</h2>
 
-            <ul className="list-square space-y-4 pl-5 text-gray-500 marker:text-pink-600">
+            <ul className="list-square space-y-4 pl-8 text-gray-500 marker:text-pink-600">
               <li>
                 In the last few years I&apos;ve primarily worked with React and
                 NextJS using Typescript.
@@ -59,7 +59,7 @@ export default function Uses() {
           <section className="space-y-4">
             <h2 className="font-mono text-xl font-bold">Other</h2>
 
-            <ul className="list-square space-y-4 pl-5 text-gray-500 marker:text-pink-600">
+            <ul className="list-square space-y-4 pl-8 text-gray-500 marker:text-pink-600">
               <li>
                 Visual Studio Code has been my code editor of choice for many
                 years. Right now I use the Night Owl theme.
