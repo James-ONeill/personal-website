@@ -196,9 +196,8 @@ const projects: ProjectProps[] = [
 export default function Portfolio() {
   return (
     <main>
+      <MainHeading>Portfolio</MainHeading>
       <Container>
-        <MainHeading>Portfolio</MainHeading>
-
         <div className="space-y-20">
           {projects.map((project, key) => (
             <Project key={key} {...project} />

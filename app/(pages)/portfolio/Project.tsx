@@ -41,9 +41,13 @@ export default function Project({
       </div>
 
       <div className="space-y-4">
-        <h2 className="text-xl font-bold tracking-wider">{title}</h2>
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between lg:gap-6">
+          <h2 className="text-xl font-bold tracking-wider">{title}</h2>
 
-        {technologies.length > 0 && <TechBadges technologies={technologies} />}
+          {technologies.length > 0 && (
+            <TechBadges technologies={technologies} />
+          )}
+        </div>
 
         {description && (
           <div className="space-y-2 text-gray-500 lg:max-w-[50rem]">
