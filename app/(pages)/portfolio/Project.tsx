@@ -25,7 +25,7 @@ export default function Project({
 }: Props) {
   return (
     <article className="flex flex-col gap-10 lg:flex-row">
-      <div className="no-shrink lg:w-1/3">
+      <div className="no-shrink lg:w-2/5">
         {image && (
           <Image
             src={image.src}
@@ -58,7 +58,7 @@ export default function Project({
         {href && (
           <Link
             href={href}
-            className="text-md inline-block rounded-md bg-blue-950 px-4 py-2 text-sm font-semibold tracking-widest text-white transition-colors duration-300 hover:bg-gray-200 hover:text-blue-950"
+            className="text-md inline-block rounded-md bg-blue-950 px-4 py-2 text-sm font-semibold tracking-widest text-white transition-colors duration-300 hover:bg-blue-950/[.7]"
           >
             View Project
           </Link>

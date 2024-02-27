@@ -30,7 +30,7 @@ export default function Home() {
     <div className="bg-indigo-50 bg-gradient-to-b from-indigo-50 to-indigo-100">
       <div className="flex min-h-screen flex-col bg-[radial-gradient(rgba(204,_204,_204,_.7)_1px,_rgba(255,_255,_255,_0)_1px)] bg-[length:1.7rem_1.7rem]">
         <Header type="static" />
-        
+
         <main className="flex flex-grow flex-col justify-center px-8 py-20">
           <div className="mx-auto w-full max-w-[60rem]">
             <div className="space-y-10">
@@ -43,9 +43,10 @@ export default function Home() {
                   height={150}
                 />
                 <div className="space-y-2">
-                  <h1 className="text-3xl font-bold [text-shadow:_-2px_4px_0_rgb(0_0_0_/_40%),_0_-4px_0_rgb(255_0_0_/_40%)] lg:text-6xl">
+                  <h1 className="text-3xl font-bold lg:text-6xl">
                     Hey, I&apos;m James
                   </h1>
+
                   <p className="font-mono text-lg lg:text-xl">
                     I&apos;m a web developer
                   </p>
