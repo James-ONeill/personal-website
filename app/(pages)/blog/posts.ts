@@ -9,7 +9,7 @@ export interface PostMetadata {
   published?: boolean;
 }
 
-const postsDirectory = path.join(process.cwd(), "app/blog/(posts)");
+const postsDirectory = path.join(process.cwd(), "app/(pages)/blog/(posts)");
 
 const directoryHasPost = (dirName: string): boolean =>
   fs.lstatSync(path.join(postsDirectory, dirName)).isDirectory() &&
