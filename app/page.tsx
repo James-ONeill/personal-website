@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="bg-indigo-50 bg-gradient-to-b from-indigo-50 to-indigo-100">
-      <div className="flex min-h-screen flex-col bg-[radial-gradient(rgba(204,_204,_204,_.7)_1px,_rgba(255,_255,_255,_0)_1px)] bg-[length:1.7rem_1.7rem]">
+      <div className="flex min-h-screen flex-col bg-dots-slate-900/[.1]">
         <Header type="static" />
 
         <main className="flex flex-grow flex-col justify-center px-8 py-20">
