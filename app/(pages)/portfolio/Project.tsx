@@ -25,7 +25,7 @@ export default function Project({
 }: Props) {
   return (
     <article className="flex flex-col gap-10 lg:flex-row">
-      <div className="no-shrink lg:w-1/3">
+      <div className="no-shrink lg:w-2/5">
         {image && (
           <Image
             src={image.src}
@@ -41,9 +41,13 @@ export default function Project({
       </div>
 
       <div className="space-y-4">
-        <h2 className="text-xl font-bold tracking-wider">{title}</h2>
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between lg:gap-6">
+          <h2 className="text-xl font-bold tracking-wider">{title}</h2>
 
-        {technologies.length > 0 && <TechBadges technologies={technologies} />}
+          {technologies.length > 0 && (
+            <TechBadges technologies={technologies} />
+          )}
+        </div>
 
         {description && (
           <div className="space-y-2 text-gray-500 lg:max-w-[50rem]">
@@ -54,7 +58,7 @@ export default function Project({
         {href && (
           <Link
             href={href}
-            className="text-md inline-block rounded-md bg-blue-950 px-4 py-2 text-sm font-semibold tracking-widest text-white transition-colors duration-300 hover:bg-gray-200 hover:text-blue-950"
+            className="text-md inline-block rounded-md bg-blue-950 px-4 py-2 text-sm font-semibold tracking-widest text-white transition-colors duration-300 hover:bg-blue-950/[.7]"
           >
             View Project
           </Link>

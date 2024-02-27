@@ -1,11 +1,7 @@
-import Container from "./Container";
-
 export default function Footer() {
   return (
-    <footer className="mt-auto pb-10 pt-20">
-      <Container>
-        <p className="text-sm">Copyright 2024 James O&apos;Neill.</p>
-      </Container>
+    <footer className="mt-auto px-8 py-10">
+      <p className="text-sm">&copy; James O&apos;Neill 2024</p>
     </footer>
   );
 }

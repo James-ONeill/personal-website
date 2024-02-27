@@ -183,7 +183,7 @@ const projects: ProjectProps[] = [
         particular, I was heavily involved in building the landing page for the{" "}
         <Link
           href="https://www.notarohomes.co.uk/care-home/casa-di-lusso-dementia-nursing-care-home-bridgwater"
-          className="font-bold text-blue-600"
+          className="font-bold text-blue-950 transition-[text-shadow] duration-300 [text-shadow:_0_0_0_rgb(219_39_119_/_40%)] hover:[text-shadow:_2px_2px_0_rgb(219_39_119_/_40%)] focus:[text-shadow:_2px_2px_2px_rgb(219_39_119_/_100%)]"
         >
           Casa di Lusso care home
         </Link>
@@ -196,9 +196,8 @@ const projects: ProjectProps[] = [
 export default function Portfolio() {
   return (
     <main>
+      <MainHeading>Portfolio</MainHeading>
       <Container>
-        <MainHeading>Portfolio</MainHeading>
-
         <div className="space-y-20">
           {projects.map((project, key) => (
             <Project key={key} {...project} />
